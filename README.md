@@ -80,8 +80,7 @@ Monitoring with Grafana
 You can deploy Prometheus and Grafana on Minikube and connect Grafana dashboards to the Prometheus metrics endpoint for observability.
 This repo is ready for such deployments (future work or separate manifests needed).
 
-License
-This project is licensed under the MIT License.
+
 
 Author
 Vivek B 
