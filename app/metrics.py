@@ -3,11 +3,11 @@ from prometheus_client import generate_latest, CONTENT_TYPE_LATEST, Counter
 
 metrics_router = APIRouter()
 
-# Prometheus metric definition
+# Add status_code as a label
 REQUEST_COUNT = Counter(
     "http_requests_total",
     "Total HTTP Requests",
-    ["method", "endpoint"]
+    ["method", "endpoint", "status_code"]
 )
 
 @metrics_router.get("/metrics")
