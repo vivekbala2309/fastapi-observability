@@ -24,6 +24,7 @@ fastapi-server/
 │ ├── init.py
 │ ├── main.py # App entrypoint, starts FastAPI server
 │ ├── metrics.py # Prometheus metrics setup
+  ├── middleware.py 
 │ └── routes/
 │ ├── init.py
 │ └── basic.py # API route definitions
@@ -130,16 +131,15 @@ docker@minikube:~$ docker login
 
 
 Prometheus Metrics
-Your app exposes metrics at http://localhost:8000/metrics in the Prometheus format.
+App exposes metrics at http://localhost:8000/metrics in the Prometheus format.
 This endpoint can be scraped by Prometheus to collect HTTP request data.
 
 Monitoring with Grafana
-You can deploy Prometheus and Grafana on Minikube and connect Grafana dashboards to the Prometheus metrics endpoint for observability.
-This repo is ready for such deployments (future work or separate manifests needed).
+Deployed Prometheus and Grafana on Minikube and connected Grafana dashboards to the Prometheus metrics endpoint for observability.
+
+Grafana dashboard json - fastapi visualization-1748840100585.json
 
 
 
-Author
-Vivek B 
 
 
